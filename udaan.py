@@ -30,7 +30,7 @@ class Planner:
 				break
 
 	def total_cost(self, place):
-    	#Computes the total cost of the trip.
+    		#Computes the total cost of the trip.
 
 		self.cost_of_stay = self.hotel_cost.get(self.hotel_type) * self.night_count
 		self.bill = self.cost_of_stay + self.package_cost
