@@ -1,6 +1,5 @@
 """This program allows the user to select the place they wish to visit.
-The place chosen is passses to the class Planner. 
-This is imported from file named udaan.py"""
+The chosen place is passed to the class Planner."""
 
 from udaan import Planner
 
