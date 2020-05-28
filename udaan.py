@@ -10,14 +10,14 @@ class Planner:
 		self.hotel_cost = {1: 1500, 2: 2500, 3: 5000}
 
 	def days_enquiry(self, place):
-	#Allows the user to enter the number of nights they wish to stay.Computes the cost of the package
+		#Allows the user to enter the number of nights they wish to stay.Computes the cost of the package
     	
 		print(f"Cost per day for {place} is Rs {self.cost_per_night.get(place)}.This cost includes food and the travel charges.")
 		self.night_count = int(input("Enter the number of nights you wish to stay  "))
 		self.package_cost = self.cost_per_night.get(place)*self.night_count
 
 	def hotel_type_enquiry(self):
-	#Allows the user to choose the type of hotel they wish to stay in.
+		#Allows the user to choose the type of hotel they wish to stay in.
 	
 		while True:
 			self.hotel_type = False
@@ -30,7 +30,7 @@ class Planner:
 				break
 
 	def total_cost(self, place):
-    #Computes the total cost of the trip.
+    	#Computes the total cost of the trip.
 
 		self.cost_of_stay = self.hotel_cost.get(self.hotel_type) * self.night_count
 		self.bill = self.cost_of_stay + self.package_cost
@@ -42,12 +42,12 @@ class Planner:
 		print(tabulate(table, tablefmt="fancy_grid"))
 
 	def extra(self, place):
-    #Any extra feautures can be added here
+   		#Any extra feautures can be added here
 
 		print(f"Here are some of the things you can do in {place}")
 
 	def gui(self, place):
-    #Displays some of must visit places on google chrome using pyautogui
+   		#Displays some of must visit places on google chrome using pyautogui
 
 		time.sleep(5)
 		if place == "coorg":
