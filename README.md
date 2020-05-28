@@ -5,7 +5,7 @@ Udaan lets you plan your trip in the most convinient way. Not only does it provi
 some of the must visit places during your trip.
 
 
-Some of the installasions required :
+Some of the installations required :
 
 1)pip install tabulate
 
